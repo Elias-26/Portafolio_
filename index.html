@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, mimimum-scale=1.0">
+    <link rel="icon" href="imagenes/Logox3.jpg" /> <!--imagen o logo en la pestaña-->
+    <title> Encriptador</title> <!--nombre que aparecera en la pestaña-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css/reset.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    
+        <header>
+            <div>
+                <h1 class="Logo">
+                    <img class="logo" src="imagenes/Logo.jpg" href="index.html"  alt="logo de alura">
+                </h1>
+               
+            </div>
+        </header>
+
+        <main class="main content">
+            <section class="in-section">
+            <div class="input-container">
+                <input required="" type="text" name="text" autocomplete="off" class="input">
+                <label class="user-label">ingresa tu mensaje aqui </label>
+                <div class="in-section-send ">
+                    <div class="section-send-details" id="details">
+                        <ion-icon name="information-circle-outline"></ion-icon>
+                        <span>SOLO LETRAS MINUSCULAS Y SIN ACENTOS.</span>
+                    </div>
+                    <div class="button-container">
+                        <button type="submit" value="Encriptar" class="btn encriptar-btn " id="btn-encriptar"> Encriptar</button>
+                        <button type="submit" value="Desencriptar" class="btn desenciptar-btn" id="btn-desencriptar">Desencriptar</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+            <section class="out-section">
+                <div class="out-section-vacio" id="empty-section">
+
+                    <img class="out-section-vacio-img none" src="imagenes/Muñeco.jpg" alt="ingresa un  texto">
+                    <h2 class="title">Ningun mensaje fue encontrado</h2>
+                    <p>Ingresa el texto que desees encriptar o desencriptar</p>
+                 </div>
+                    <div class="out-section-full hidden-up " id="full-section">
+                        <p id="outText"></p>
+                        <button class="btn btn-copy cursor " id="copy">Copiar</button>
+                    </div>
+                </section>
+        </main>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script src="script.js"></script>
+   
+</body>
+
+</html>
